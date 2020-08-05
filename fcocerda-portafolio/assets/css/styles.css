@@ -1,0 +1,147 @@
+:root {
+  --white: #fff;
+  --light: rgba(0, 0, 0, 0.05);
+  --medium: #dddddd;
+  --dark: #373a3c;
+  --purple: #660066;
+  --main: #bb3b3f;
+  --text: #555;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  line-height: 2em;
+  color: var(--text);
+}
+a,
+a:visited,
+a:active,
+a:hover,
+a:focus {
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.75rem;
+  line-height: 1.5em;
+}
+header {
+  z-index: 1020;
+}
+header,
+#trabajos,
+footer {
+  background-color: var(--main);
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+.navbar-brand img {
+  height: 2em;
+  color: var(--white);
+}
+section#carrusel {
+  padding-top: 0;
+}
+#carrusel hr {
+  border-top: 1px solid var(--white);
+  margin: 0.2em 0 0.5em;
+  width: 8%;
+}
+.carousel-item {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+.carousel-item img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: brightness(75%);
+}
+.texto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: var(--white);
+  background: var(--light);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+p {
+  margin: 0;
+}
+section,
+footer {
+  padding: 3em 0;
+}
+hr {
+  width: 20%;
+  margin: 2em auto 3em;
+  border-top: 1px solid var(--text);
+}
+#experiencia .iconify {
+  font-size: 6em;
+  color: var(--main);
+}
+#experiencia h4 {
+  font-family: "Rubik", sans-serif;
+}
+h3.titulo {
+  font-size: 2em;
+  text-align: center;
+}
+.card {
+  margin-bottom: 2em;
+}
+#trabajos .card {
+  color: var(--text);
+}
+#trabajos hr {
+  border-top: 1px solid var(--white);
+}
+.ask {
+  padding: 7em 0;
+}
+footer a {
+  color: var(--white);
+  font-size: 2.5em;
+  padding: 0 0.25em;
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  #experiencia .iconify {
+    font-size: 20vw;
+  }
+  .navbar-collapse {
+    position: absolute;
+    background-color: var(--main);
+    padding: 1em 0;
+    right: 0;
+    border-radius: 5px;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+@media (max-width: 767.98px) {
+  #experiencia .iconify {
+    font-size: 50vw;
+  }
+  #carrusel hr {
+    width: 33%;
+  }
+}
