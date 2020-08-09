@@ -43,10 +43,14 @@
       }
     }
   }
-  #title {
+  section#title {
     h2 {
       width: 100%;
       font-size: 2.25em;
+    }
+    .scrolldown img {
+      width: 10%;
+      padding-bottom: 3em;
     }
   }
   #autor {

@@ -8297,7 +8297,7 @@ header .img-fluid {
 }
 
 section#title {
-  background: url(../img/post-image.jpg) no-repeat;
+  background: url(../img/post-image.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -8416,9 +8416,13 @@ section {
     text-align: center;
   }
 
-  #title h2 {
+  section#title h2 {
     width: 100%;
     font-size: 2.25em;
+  }
+  section#title .scrolldown img {
+    width: 10%;
+    padding-bottom: 3em;
   }
 
   #autor {
