@@ -1,12 +1,13 @@
-#title {
-  background: url(../img/barber.png) no-repeat;
+section#title {
+  background: url(../img/post-image.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   color: #fff;
+  padding: 0;
   h2 {
     font-size: 4.4em;
     line-height: 1.3em;
-    width: 55%;
+    width: 60%;
     font-style: italic;
   }
   .scrolldown img {

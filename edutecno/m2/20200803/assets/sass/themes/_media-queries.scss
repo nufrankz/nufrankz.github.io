@@ -94,8 +94,13 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .btn {
-    margin: 2.5em 0.75em 5em 0;
+    // margin: 2.5em 0.75em 5em 0;
     padding: 0.45em 1.35em;
+  }
+  .author-img {
+    img {
+      width: 90%;
+    }
   }
 }
 

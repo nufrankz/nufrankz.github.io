@@ -8296,32 +8296,35 @@ header .img-fluid {
   height: 20px;
 }
 
-#title {
-  background: url(../img/barber.png) no-repeat;
+section#title {
+  background: url(../img/post-image.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   color: #fff;
+  padding: 0;
 }
-#title h2 {
+section#title h2 {
   font-size: 4.4em;
   line-height: 1.3em;
-  width: 55%;
+  width: 60%;
   font-style: italic;
 }
-#title .scrolldown img {
+section#title .scrolldown img {
   width: 3%;
   padding-bottom: 3em;
 }
 
 #autor {
   border-top: 1px solid #d1d1d1;
-  text-align: center;
 }
 #autor h3 {
   font-family: "Playfair Display", serif;
   font-size: 2em;
   font-weight: 700;
   font-style: italic;
+}
+#autor .author-img img {
+  border-radius: 100%;
 }
 
 .entrada__descripcion__links {
@@ -8440,8 +8443,11 @@ section {
 }
 @media (min-width: 992px) {
   .btn {
-    margin: 2.5em 0.75em 5em 0;
     padding: 0.45em 1.35em;
+  }
+
+  .author-img img {
+    width: 90%;
   }
 }
 

@@ -1,11 +1,15 @@
 #autor {
   border-top: 1px solid $light-gray;
-  text-align: center;
   h3 {
     font-family: $headings-font-family;
     font-size: 2em;
     font-weight: 700;
     font-style: italic;
+  }
+  .author-img {
+    img {
+      border-radius: 100%;
+    }
   }
 }
 .entrada {
