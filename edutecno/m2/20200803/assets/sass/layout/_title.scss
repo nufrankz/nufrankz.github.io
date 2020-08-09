@@ -1,8 +1,16 @@
 #title {
+  background: url(../img/barber.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
   h2 {
     font-size: 4.4em;
     line-height: 1.3em;
     width: 55%;
     font-style: italic;
+  }
+  .scrolldown img {
+    width: 3%;
+    padding-bottom: 3em;
   }
 }

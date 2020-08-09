@@ -1,0 +1,105 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  //contenido
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  //contenido
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  header {
+    .container {
+      .col {
+        &:last-child {
+          text-align: right;
+          padding-right: 0;
+          a {
+            padding: 0.5em 1.5em;
+            &:hover {
+              background-color: $nickel;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .navbar-collapse {
+      position: absolute;
+      z-index: 1;
+      padding: 0.5em 0;
+      right: 0;
+      background-color: $eerie-black;
+    }
+  }
+  article {
+    .container {
+      .row {
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+  }
+  #title {
+    h2 {
+      width: 100%;
+      font-size: 2.25em;
+    }
+  }
+  #autor {
+    text-align: center;
+    img {
+      width: 50%;
+      margin: auto;
+    }
+    .entrada__descripcion__links {
+      font-size: 1.15rem;
+      line-height: 1.5em;
+    }
+  }
+  #nav {
+    font-size: 0.9em;
+  }
+  footer {
+    img {
+      width: 50%;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  //contenido
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  // contenido
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  // contenido
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .btn {
+    margin: 2.5em 0.75em 5em 0;
+    padding: 0.45em 1.35em;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  // contenido
+}

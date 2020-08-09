@@ -8293,18 +8293,29 @@ header a:hover, header a.current {
   color: #ecbcba;
 }
 header .img-fluid {
-  height: 50px;
+  height: 20px;
 }
 
+#title {
+  background: url(../img/barber.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
 #title h2 {
   font-size: 4.4em;
   line-height: 1.3em;
   width: 55%;
   font-style: italic;
 }
+#title .scrolldown img {
+  width: 3%;
+  padding-bottom: 3em;
+}
 
 #autor {
   border-top: 1px solid #d1d1d1;
+  text-align: center;
 }
 #autor h3 {
   font-family: "Playfair Display", serif;
@@ -8357,6 +8368,9 @@ footer img {
   width: 10%;
 }
 
+.btn {
+  border-radius: 3em;
+}
 .btn:hover {
   color: #d1d1d1;
 }
@@ -8364,8 +8378,71 @@ footer img {
   border: 2px solid #c4c4c5;
 }
 
+article {
+  padding: 4em 0;
+}
+article .article__fecha {
+  font-family: "Playfair Display", serif;
+}
+
 section {
   padding: 4em 0;
+}
+
+@media (max-width: 991.98px) {
+  header .container .col:last-child {
+    text-align: right;
+    padding-right: 0;
+  }
+  header .container .col:last-child a {
+    padding: 0.5em 1.5em;
+  }
+  header .container .col:last-child a:hover {
+    background-color: #6c6e70;
+    color: #fff;
+  }
+  header .navbar-collapse {
+    position: absolute;
+    z-index: 1;
+    padding: 0.5em 0;
+    right: 0;
+    background-color: #121619;
+  }
+
+  article .container .row:last-child {
+    text-align: center;
+  }
+
+  #title h2 {
+    width: 100%;
+    font-size: 2.25em;
+  }
+
+  #autor {
+    text-align: center;
+  }
+  #autor img {
+    width: 50%;
+    margin: auto;
+  }
+  #autor .entrada__descripcion__links {
+    font-size: 1.15rem;
+    line-height: 1.5em;
+  }
+
+  #nav {
+    font-size: 0.9em;
+  }
+
+  footer img {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .btn {
+    margin: 2.5em 0.75em 5em 0;
+    padding: 0.45em 1.35em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
