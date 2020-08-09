@@ -8279,6 +8279,10 @@ a:active {
   color: #e6e7e7;
 }
 
+.big {
+  font-size: 1.4em;
+}
+
 header {
   background-color: #121619;
 }
@@ -8299,11 +8303,69 @@ header .img-fluid {
   font-style: italic;
 }
 
+#autor {
+  border-top: 1px solid #d1d1d1;
+}
+#autor h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.entrada__descripcion__links {
+  font-size: 1.4em;
+}
+
+.autor__descripcion {
+  font-size: 0.9em;
+  color: #6c6e70;
+}
+
+#nav {
+  background-color: #e6e7e7;
+}
+#nav .page-item .page-link {
+  color: #6c6e70;
+  padding: 0.6em 1em;
+}
+#nav .page-item .page-link:hover {
+  background-color: #d1d1d1;
+}
+#nav .page-item.active .page-link {
+  background-color: #6c6e70;
+  border-color: #6c6e70;
+  color: #fff;
+}
+#nav .page-item.disabled {
+  color: #e6e7e7;
+}
+#nav .page-item:first-child .page-link {
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 3em;
+}
+#nav .page-item:last-child .page-link {
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+footer {
+  padding: 4em;
+  background-color: #121619;
+}
+footer img {
+  width: 10%;
+}
+
 .btn:hover {
   color: #d1d1d1;
 }
 .btn:focus {
   border: 2px solid #c4c4c5;
+}
+
+section {
+  padding: 4em 0;
 }
 
 /*# sourceMappingURL=main.css.map */

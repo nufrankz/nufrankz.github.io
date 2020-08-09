@@ -16,10 +16,13 @@
 // Layout
 @import "layout/header";
 @import "layout/title";
+@import "layout/autor";
+@import "layout/nav";
 @import "layout/footer";
 
 // Components
 @import "components/buttons";
+@import "components/section";
 
 // Pages
 @import "pages/blog";
