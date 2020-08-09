@@ -1,0 +1,40 @@
+$headings-font-family: "Playfair Display", serif;
+$body-font: "Roboto", sans-serif;
+
+body {
+  line-height: 240%;
+  font-family: $body-font;
+}
+h1 {
+  font-family: $headings-font-family;
+  font-size: 4.375em;
+}
+h2 {
+  font-family: $headings-font-family;
+  font-size: 1.875em;
+}
+h3 {
+  font-family: $headings-font-family;
+  font-size: 1.125em;
+}
+h4 {
+  font-family: $headings-font-family;
+  font-size: 1em;
+}
+h5 {
+  font-family: $headings-font-family;
+  font-size: 1em;
+}
+h6 {
+  font-family: $headings-font-family;
+  font-size: 0.75em;
+}
+a {
+  color: $spanish-pink;
+  &:hover {
+    color: $raisin-black;
+  }
+  &:active {
+    color: $platinum;
+  }
+}

@@ -1,0 +1,17 @@
+#title {
+  background: url(../img/barber.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+.scrolldown img {
+  width: 3%;
+  padding-bottom: 3em;
+}
+.article__fecha {
+  font-family: "Playfair Display", serif;
+}
+.btn {
+  border-radius: 3em;
+  margin: 2.5em 0.75em 5em 0;
+}

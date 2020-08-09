@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbería</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/temp.css" />
+  </head>
+  <body>
+    <!-- lunes:
+    OK html, mkdir 7-1 img, sass, css
+    logica visual parciales, @import, manifesto
+    mkdir vendors, bootstrap-sass @import
+    header, section, footer, nav, article
+    .block-name__element-name__modifier-name (.entrada__descripcion__links)
+    martes:
+    2 componentes boostrap (navbar, pagination, cards, button)
+    guia estilos > 5 variables sass
+    reset.css
+    "componentes" con estilos en parciales
+    sass &
+    final:
+    maqueta zip, github repo -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="col-md-2 text-center">
+            <a class="navbar-brand" href="#"
+              ><img src="assets/img/mustache.svg" alt="Logo" class="my-3 w-50"
+            /></a>
+          </div>
+          <div class="col-md-9">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trabajos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link current" href="#"
+                    >Blog <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Horas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="title">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col text-center d-flex flex-column h-100">
+            <h2 class="m-auto">5 formas de cuidar tu corte de cabello</h2>
+            <span class="scrolldown"
+              ><img src="assets/img/scroll-down.svg" alt="Desliza hacia abajo"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="article__fecha mb-0 py-5">12 de abril de 2018</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              impedit corrupti tempore aut modi vero repudiandae cum sequi
+              obcaecati quo assumenda laborum possimus placeat nemo, asperiores
+              eos, laudantium voluptatem similique. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Iusto a commodi iste possimus eaque
+              magni quisquam ad quod nesciunt quo laudantium velit impedit
+              consectetur iure quam, asperiores, repellendus inventore.
+              Nesciunt.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              nesciunt eum harum quaerat earum. Asperiores ducimus fugiat
+              tenetur nam eveniet adipisci consectetur, earum, omnis delectus
+              itaque recusandae error dolorum illum. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Eius repellendus possimus
+              consequuntur beatae natus cumque tempora enim sapiente
+              voluptatibus provident ea reprehenderit commodi, nesciunt expedita
+              quaerat quis necessitatibus quisquam molestias?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              itaque adipisci temporibus deserunt vitae dolore quaerat quisquam
+              porro a officiis doloremque magnam qui omnis error veniam,
+              veritatis debitis nobis ullam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium repellat fugiat, molestias cupiditate incidunt amet
+              dolorum minus! Error incidunt, nisi excepturi distinctio similique
+              beatae quisquam, perferendis nemo dolores assumenda eveniet!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              doloribus quasi iusto assumenda error eligendi fugiat, vitae
+              debitis pariatur magni tenetur? Aut reprehenderit quos ducimus ad
+              quae saepe totam hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+              est quo excepturi mollitia voluptatem molestiae eius aperiam modi
+              quae. Nisi possimus eveniet non natus atque exercitationem sequi
+              expedita unde ipsum? Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Debitis sit non dolorem officiis laudantium
+              nesciunt doloremque! Omnis explicabo, ab aperiam suscipit hic,
+              harum facilis labore, non rerum possimus dicta recusandae?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary">Compartir</button>
+            <button type="button" class="btn btn-secondary">
+              Comentar en Twitter
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <section id="autor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="author-img">
+                  <img src="assets/img/naomi-thai.png" alt="Naomi Thai foto" />
+                </div>
+              </div>
+              <div class="col-md-6"></div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              necessitatibus cupiditate enim alias eius eveniet repudiandae modi
+              distinctio obcaecati, nesciunt ipsa saepe asperiores fugit facere
+              dolores, ipsum consequatur officiis. Enim? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Facilis sequi vero ratione
+              cupiditate ipsum ipsam reprehenderit nobis dolorum tempore quo
+              accusantium quod harum aliquid fuga odio magni, impedit accusamus.
+              Atque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <img src="logo" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
