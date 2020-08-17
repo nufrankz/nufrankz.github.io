@@ -1,0 +1,52 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  // contenido
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  // contenido
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  // contenido
+  .container {
+    width: 90%;
+  }
+  .menu {
+    &__nav {
+      ul {
+        li.hide-992 {
+          display: none;
+        }
+      }
+    }
+  }
+  .contenido {
+    &__noticias,
+    &__aside {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 1em;
+    }
+    &__noticia {
+      width: 100%;
+      &-body {
+        img {
+          max-height: 20vh;
+          overflow: auto;
+          width: 100%;
+        }
+      }
+    }
+    &__aside {
+      display: none;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  // contenido
+}

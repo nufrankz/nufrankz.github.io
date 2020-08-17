@@ -1,0 +1,31 @@
+// main.scss #Manifest File
+
+// Abstract
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// Vendors
+// @import "vendors/bootstrap/bootstrap";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+
+// Layout
+@import "layout/grid";
+
+// Components
+@import "components/menu";
+@import "components/contenido";
+@import "components/newsletter";
+@import "components/footer";
+
+// Pages
+@import "pages/blog";
+
+// Themes
+@import "themes/theme";
+@import "themes/admin";
+@import "themes/media-queries";

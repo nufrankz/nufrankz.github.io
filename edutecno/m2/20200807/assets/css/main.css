@@ -1,0 +1,319 @@
+.newsletter__input input,
+.newsletter__input button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.menu {
+  border-bottom: 1px solid gray;
+}
+.menu__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  width: 50%;
+}
+.menu__nav {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+.menu__nav ul {
+  margin-left: auto;
+  list-style: none;
+}
+.menu__nav ul li {
+  display: inline-block;
+}
+.menu__nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu__nav__input-menu {
+  border-radius: 30px;
+}
+.menu__logo, .menu__nav {
+  padding: 1.5rem 0;
+}
+
+.contenido {
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.contenido h1,
+.contenido h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.8em 0;
+}
+.contenido__noticias {
+  width: 80%;
+  padding-right: 1em;
+  float: left;
+}
+.contenido__noticia {
+  width: 33.3%;
+  float: left;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+.contenido__noticia-body img {
+  width: 100%;
+}
+.contenido__noticia-body p {
+  padding: 0.6em 0;
+}
+.contenido .contenido__aside {
+  width: 20%;
+  padding-left: 1em;
+  float: right;
+}
+.contenido .contenido__aside-header {
+  width: 100%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid gray;
+}
+.contenido .contenido__aside-tags {
+  padding-bottom: 1em;
+  border-bottom: 1px solid gray;
+}
+.contenido .contenido__aside-tags ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.contenido .contenido__aside-tags ul li {
+  display: inline-block;
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin: 0 0.25em 0.25em 0;
+  color: white;
+}
+.contenido .contenido__aside-highlighted {
+  margin-bottom: 50px;
+}
+.contenido .contenido__aside-highlighted img {
+  width: 100%;
+}
+.contenido .contenido__aside-highlighted h4 {
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+.newsletter {
+  width: 100%;
+  text-align: center;
+}
+.newsletter .container {
+  background-color: #f2f4f5;
+  padding: 30px 0;
+}
+.newsletter h2 {
+  font-size: 24px;
+  padding: 0.5em;
+}
+.newsletter__input {
+  padding: 1em;
+}
+.newsletter__input button {
+  background-color: coral;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 90%;
+  }
+
+  .menu__nav ul li.hide-992 {
+    display: none;
+  }
+
+  .contenido__noticias, .contenido__aside {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 1em;
+  }
+  .contenido__noticia {
+    width: 100%;
+  }
+  .contenido__noticia-body img {
+    max-height: 20vh;
+    overflow: auto;
+    width: 100%;
+  }
+  .contenido__aside {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

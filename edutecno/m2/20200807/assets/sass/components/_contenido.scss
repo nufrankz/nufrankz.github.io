@@ -1,0 +1,66 @@
+.contenido {
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  h1,
+  h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.8em 0;
+  }
+  &__noticias {
+    width: 80%;
+    padding-right: 1em;
+    float: left;
+  }
+  &__noticia {
+    width: 33.3%;
+    float: left;
+    padding: 0 0.5em;
+    cursor: pointer;
+    &-body {
+      img {
+        width: 100%;
+      }
+      p {
+        padding: 0.6em 0;
+      }
+    }
+  }
+  .contenido__aside {
+    width: 20%;
+    padding-left: 1em;
+    float: right;
+    &-header {
+      width: 100%;
+      padding-bottom: 1em;
+      border-bottom: 1px solid gray;
+    }
+    &-tags {
+      padding-bottom: 1em;
+      border-bottom: 1px solid gray;
+      ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li {
+          display: inline-block;
+          padding: 2px 4px;
+          background-color: steelblue;
+          margin: 0 0.25em 0.25em 0;
+          color: white;
+        }
+      }
+    }
+    &-highlighted {
+      margin-bottom: 50px;
+      img {
+        width: 100%;
+      }
+      h4 {
+        font-weight: 700;
+        padding: 1em 0;
+      }
+    }
+  }
+}

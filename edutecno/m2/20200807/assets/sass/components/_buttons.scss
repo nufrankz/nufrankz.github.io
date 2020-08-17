@@ -1,0 +1,9 @@
+.btn {
+  border-radius: 3em;
+  &:hover {
+    color: #d1d1d1;
+  }
+  &:focus {
+    border: 2px solid #c4c4c5;
+  }
+}
