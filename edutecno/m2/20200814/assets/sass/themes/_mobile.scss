@@ -1,0 +1,91 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  // contenido
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  // contenido
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  section {
+    padding: 0;
+  }
+  h3 {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0.75em 0;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header {
+    .col-6 {
+      display: flex;
+      align-items: center;
+    }
+    padding: 1.5em 0;
+    img {
+      height: 1.75em;
+    }
+    .hamburguer {
+      display: block;
+      font-size: 2em;
+      text-align: right;
+    }
+    .header__desktop {
+      display: none;
+    }
+  }
+  section#intro {
+    background-size: 150%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    .col-md-4 {
+      padding: 0;
+    }
+  }
+  section#precios {
+    background-image: url(../images/bg-price.png);
+    background-size: 170% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    .section__title {
+      padding: 7em 0 1em;
+    }
+    h3 {
+      text-align: left;
+    }
+    .col-md-6 {
+      margin-bottom: 3em;
+    }
+  }
+  .card {
+    width: 100%;
+    &.right {
+      margin: 0;
+    }
+  }
+  footer {
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 0 0.5em 1em;
+    }
+    .footer__copyright {
+      text-align: center;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  // contenido
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width

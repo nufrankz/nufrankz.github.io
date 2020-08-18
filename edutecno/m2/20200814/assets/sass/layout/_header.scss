@@ -1,0 +1,14 @@
+header {
+  a {
+    display: inline-block;
+    padding-right: 1em;
+    @include anchor($onyx);
+  }
+  .hamburguer,
+  .header__mobile {
+    display: none;
+  }
+  .header__desktop {
+    display: flex;
+  }
+}

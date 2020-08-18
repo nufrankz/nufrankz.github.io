@@ -1,0 +1,33 @@
+.card {
+  width: 52.5%;
+  background-color: #fff;
+  color: $onyx;
+  margin: auto 1em auto auto;
+  border: 1px solid $spanish-gray;
+  padding: 2.25em 2em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &.right {
+    margin: auto auto auto 1em;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $onyx;
+    font-family: "Open Sans", sans-serif;
+  }
+  h4 {
+    font-size: $xx-large;
+  }
+  ul {
+    // border-top: 1px solid $lavender-gray;
+    // border-bottom: 1px solid $lavender-gray;
+    margin: 0 0 1em 1.65em;
+    list-style: disc;
+    flex: 1 1 100%;
+  }
+  button {
+    margin-top: 1em;
+  }
+}

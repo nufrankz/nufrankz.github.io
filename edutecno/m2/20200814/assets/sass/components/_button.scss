@@ -1,0 +1,18 @@
+button {
+  background-color: $ball-blue;
+  color: #fff;
+  border: 0;
+  padding: 0.5em 1em;
+  font-family: "Open Sans", sans-serif;
+  transition: background-color 1s ease;
+  &.large {
+    padding: 0.75em 1.5em;
+  }
+  &:hover {
+    background-color: $middle-blue;
+    cursor: pointer;
+  }
+  &:focus {
+    background-color: $gray;
+  }
+}

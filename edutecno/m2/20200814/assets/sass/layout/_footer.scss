@@ -1,0 +1,11 @@
+footer {
+  background-color: $raising-black;
+  color: $silver-chalice;
+  a {
+    @include anchor($silver-chalice);
+    padding-right: 2em;
+  }
+  .footer__copyright {
+    text-align: right;
+  }
+}

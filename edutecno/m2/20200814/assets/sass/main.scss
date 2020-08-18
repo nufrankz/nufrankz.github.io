@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables";
+
+// 2. Vendors
+@import "vendors/bootstrap-grid.min";
+
+// 3. Base stuff
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/animations";
+
+// 4. Layout-related sections
+@import "layout/header";
+@import "layout/intro";
+@import "layout/precios";
+@import "layout/footer";
+
+// 5. Components
+@import "components/button";
+@import "components/card";
+
+// 6. Page-specific styles
+// @import "pages/home";
+
+// 7. Themes
+// @import "themes/default";
+@import "themes/mobile";

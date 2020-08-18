@@ -1,0 +1,13 @@
+.image__fade-in {
+  opacity: 0;
+  animation: image__fade-in 3s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes image__fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

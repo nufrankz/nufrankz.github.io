@@ -1,0 +1,17 @@
+header,
+section,
+footer {
+  padding: 3em 0;
+  .section__title {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+}
+hr {
+  border: 0;
+  border-top: 1px solid $lavender-gray;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
