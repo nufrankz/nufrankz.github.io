@@ -1,0 +1,53 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  // contenido
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  // contenido
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  // contenido
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  header {
+    ul {
+      li:not(:last-child) {
+        display: none;
+      }
+    }
+  }
+  #author {
+    .author {
+      &__image {
+        margin: auto;
+        text-align: right;
+      }
+      &__info {
+        padding: 0;
+        margin-right: auto;
+      }
+      &__buttons {
+        justify-content: center;
+        padding: 1em 0;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  // contenido
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width

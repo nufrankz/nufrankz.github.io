@@ -1,0 +1,13 @@
+button {
+  border: 0;
+  padding: 0.5em;
+  color: #fff;
+  &.btn {
+    &__primary {
+      background-color: $red;
+    }
+    &__secondary {
+      background-color: $cyan;
+    }
+  }
+}

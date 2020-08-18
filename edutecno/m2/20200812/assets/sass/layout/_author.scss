@@ -1,0 +1,33 @@
+#author {
+  padding: 1.5em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .author {
+    &__image {
+      border-radius: 100%;
+      width: 5em;
+      height: 5em;
+      overflow: hidden;
+      background-image: url(../images/profile-image.png);
+      background-size: cover;
+      background-position: center;
+    }
+    &__info {
+      padding-left: 2em;
+      h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding-bottom: 0.25em;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 0.85em;
+        color: $font-light;
+        font-weight: 300;
+      }
+    }
+    &__buttons {
+      align-items: center;
+      justify-content: end;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  font-size: $font-size;
+  line-height: 1.5;
+  color: $font-color;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+sup {
+  vertical-align: super;
+  font-size: 0.6rem;
+}
+h2 {
+  font-weight: 500;
+}

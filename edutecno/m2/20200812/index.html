@@ -4,8 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafío Flexbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!-- 7-1, main.scss, patron responsivo, wireframes dibujos, bem semántico, bootstrap .row .col, flexbox -->
+      <!-- 7-1, main.scss, patron responsivo, wireframes dibujos, bem semántico, bootstrap .row .col, flexbox -->
+    <header>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-6 header__logo">
+            <h1>Gigeo <sup>Art</sup></h1>
+          </div>
+          <div class="col-6 header__nav">
+            <ul>
+              <a href="#"><li><i class="fas fa-search"></i></a></li>
+              <a href="#"><li><i class="fas fa-video"></i></a></li>
+              <a href="#"><li><i class="fas fa-plus"></i></a></li>
+              <a href="#"><li><i class="fas fa-bell"></i></a></li>
+              <a href="#"><li><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+    </section>
+    <section id="author">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="author__image">
+                    </div>
+                    <div class="author__info flex-grow-1">
+                        <h2>Yuki Mukami</h2>
+                        <h3>30.000 seguidores</h3>
+                    </div>
+                </div>
+                <div class="author__buttons col-md-6 d-flex">
+                    <button class="btn__secondary mr-2">Mensaje</button>
+                    <button class="btn__primary">Seguir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="videos">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col">
+                    <h2>Videos Populares</h2>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-1.png" alt="Imagen del video">
+                    </div>
+                    <h3>Después de la vela - Yuki Mukami</h3>
+                    <p>16k vistas - 1 semana atrás</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-2.png" alt="Imagen del video">
+                    </div>
+                    <h3>Far Away - Yuki Mukami</h3>
+                    <p>100k vistas - 1 mes atrás</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-3.png" alt="Imagen del video">
+                    </div>
+                    <h3>City - Yuki Mukami</h3>
+                    <p>20k vistas - 1 mes atrás</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-4.png" alt="Imagen del video">
+                    </div>
+                    <h3>A Yuki Tale - Yuki Mukami</h3>
+                    <p>1m vistas - 1 año atrás</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-5.png" alt="Imagen del video">
+                    </div>
+                    <h3>Mapocho - Yuki Mukami</h3>
+                    <p>100k vistas - 1 mes atrás</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-6.png" alt="Imagen del video">
+                    </div>
+                    <h3>Lucky Days - Yuki Mukami</h3>
+                    <p>40k vistas - 3 meses atrás</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-7.png" alt="Imagen del video">
+                    </div>
+                    <h3>30 days in My House</h3>
+                    <p>10k vistas - 4 meses atrás</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="videos__video-img">
+                        <img src="assets/images/image-8.png" alt="Imagen del video">
+                    </div>
+                    <h3>Santiago - Yuki Mukami</h3>
+                    <p>40k vistas - 3 meses atrás</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/e0fbe35457.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
