@@ -13,7 +13,6 @@
   // contenido
   h1,
   h2,
-  h3,
   h4,
   h5,
   h6 {
@@ -21,12 +20,24 @@
   }
   header {
     ul {
-      li:not(:last-child) {
-        display: none;
+      li {
+        a {
+          font-size: 2em;
+        }
+        &:not(:last-child) {
+          display: none;
+        }
       }
     }
   }
+  section {
+    padding: 1em 0;
+    &#banner {
+      height: 100px;
+    }
+  }
   #author {
+    border: 0;
     .author {
       &__image {
         margin: auto;
@@ -39,6 +50,15 @@
       &__buttons {
         justify-content: center;
         padding: 1em 0;
+        display: none;
+      }
+    }
+  }
+  #videos {
+    text-align: center;
+    .videos {
+      &__video {
+        text-align: left;
       }
     }
   }
