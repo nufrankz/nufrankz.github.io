@@ -38,6 +38,9 @@
   }
   #author {
     border: 0;
+    h3 {
+      margin: 0;
+    }
     .author {
       &__image {
         margin: auto;

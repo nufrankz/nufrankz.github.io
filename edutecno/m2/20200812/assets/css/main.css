@@ -8365,6 +8365,9 @@ h6 {
   #author {
     border: 0;
   }
+  #author h3 {
+    margin: 0;
+  }
   #author .author__image {
     margin: auto;
     text-align: right;
