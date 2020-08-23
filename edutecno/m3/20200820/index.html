@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1 {
+        font-size: 1.75em;
+      }
+      h2,
+      h3 {
+        font-size: 1.35em;
+        margin: 0;
+      }
+      h5 {
+        font-size: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      p strong {
+        font-weight: 600;
+      }
+      .list-group-item p {
+        margin: 0;
+        text-transform: capitalize;
+        padding-bottom: 0.5em;
+      }
+      .list-group-item p:last-child {
+        padding-bottom: 0;
+      }
+      .card .card .card-body {
+        padding: 0.5em 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col py-3">
+          <h1>Estadísticas Centro Médico Ñuñoa</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h2>Consultas Radiología</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h5 class="card-title">Cantidad de atenciones</h5>
+                <p id="radiologia-q"></p>
+              </li>
+              <li class="list-group-item">
+                <h5 class="card-title">Primera atención</h5>
+                <p id="radiologia-0"></p>
+              </li>
+              <li class="list-group-item">
+                <h5 class="card-title">Última atención</h5>
+                <p id="radiologia-1"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h2>Consultas Traumatología</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h5 class="card-title">Cantidad de atenciones</h5>
+                <p id="traumatologia-q"></p>
+              </li>
+              <li class="list-group-item">
+                <h5 class="card-title">Primera atención</h5>
+                <p id="traumatologia-0"></p>
+              </li>
+              <li class="list-group-item">
+                <h5 class="card-title">Última atención</h5>
+                <p id="traumatologia-1"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h2>Consultas Dentales</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h5 class="card-title">Cantidad de atenciones</h5>
+                <p id="dental-q"></p>
+              </li>
+              <li class="list-group-item">
+                <h5 class="card-title">Primera atención</h5>
+                <p id="dental-0"></p>
+              </li>
+              <li class="list-group-item">
+                <h5 class="card-title">Última atención</h5>
+                <p id="dental-1"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
