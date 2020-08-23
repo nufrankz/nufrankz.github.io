@@ -148,7 +148,6 @@ function writeAttention(spec) {
   var required = [0, quantity];
   for (i = 0; i < required.length; i++) {
     document.getElementById(spec_n + "-q").innerHTML = quantity;
-    console.log("************************************** " + spec_n);
     for (var data in spec[i]) {
       // document.getElementById(spec_n + "-" + i).innerHTML +=
       //   "<p><strong>" + data + "</strong>: " + spec[i][data] + "</p>";
