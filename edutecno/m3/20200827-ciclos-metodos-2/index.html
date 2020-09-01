@@ -5,7 +5,386 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ciclos y Métodos 2</title>
   </head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 py-4">
+          <h3 class="mb-4">Formulario Web de Reserva de Horas Médicas</h3>
+          <form onsubmit="return validarFormulario()">
+            <div class="form-group">
+              <label for="rut">Ingrese su RUT</label>
+              <input
+                type="text"
+                class="form-control"
+                id="rut"
+                placeholder="Ingrese su RUT"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nombres">Ingrese sus nombres</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombres"
+                placeholder="Ingrese sus nombres"
+              />
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Ingrese sus apellidos</label>
+              <input
+                type="text"
+                class="form-control"
+                id="apellidos"
+                placeholder="Ingrese sus apellidos"
+              />
+            </div>
+            <div class="form-group">
+              <label for="edad">Ingrese su edad</label>
+              <input
+                type="text"
+                class="form-control"
+                id="edad"
+                placeholder="Ingrese su edad"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Ingrese su E-mail</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Ingrese su E-mail"
+              />
+            </div>
+            <div class="form-group">
+              <label for="especialidad">Ingrese su especialidad</label>
+              <select id="especialidad" class="form-control">
+                <option selected>Medicina General</option>
+                <option>Adolescencia</option>
+                <option>Anestesiología</option>
+                <option>Balón Gástrico Ingerible</option>
+                <option>Broncopulmonar Adulto</option>
+                <option>Broncopulmonar Infantil</option>
+                <option>Cardiología Adulto</option>
+                <option>Cardiología Infantil</option>
+                <option>Cirugia Columna</option>
+                <option>Cirugia Gral. Formacion Cirugia Plastica</option>
+                <option>Cirugía Cabeza y Cuello</option>
+                <option>Cirugía Cardiaca Adulto</option>
+                <option>Cirugía Cardiovascular</option>
+                <option>Cirugía Cataratas</option>
+                <option>Cirugía Coloproctológica</option>
+                <option>Cirugía de Mamas</option>
+                <option>Cirugía de Tórax</option>
+                <option>Cirugía Digestiva</option>
+                <option>Cirugía Endoscópica</option>
+                <option>Cirugía General</option>
+                <option>Cirugía Lasik (Refractiva)</option>
+                <option>Cirugía Obesidad</option>
+                <option>Cirugía Oncológica</option>
+                <option>Cirugía Oncológica Cabeza y Cuello</option>
+                <option>Cirugía Pediátrica</option>
+                <option>Cirugía Plástica Infantil</option>
+                <option>Cirugía Plástica y Reparadora</option>
+                <option>Cirugía Trauma Buco Máxilo Facial</option>
+                <option>Cirugía Vascular Periférica</option>
+                <option>Dermatología</option>
+                <option>Diabetes</option>
+                <option>Diabetologia</option>
+                <option>Dolor Crónico no Oncológico</option>
+                <option>Endocrinología Adulto</option>
+                <option>Endocrinología Infantil</option>
+                <option>Enfermedad Respiratoria Adulto</option>
+                <option>Enfermedad Respiratoria Infantil</option>
+                <option>Fonoaudiología Adulto</option>
+                <option>Fonoaudiología Infantil</option>
+                <option>Gastroenterología Adulto</option>
+                <option>Gastroenterología Infantil</option>
+                <option>Genética</option>
+                <option>Geriatría</option>
+                <option>Ginecología Oncología</option>
+                <option>Ginecología y Obstetricia</option>
+                <option>Ginecología Infanto Juvenil</option>
+                <option>Ginecología Infertilidad</option>
+                <option>Hemato-Oncología</option>
+                <option>Hematología Adulto</option>
+                <option>Hematología Infantil</option>
+                <option>Infectologia Adulto</option>
+                <option>Infectologia Infantil</option>
+                <option>Inmunología Adulto</option>
+                <option>Inmunología Infantil</option>
+                <option>Kinesiología</option>
+                <option>Kinesiología de Piso Pélvico</option>
+                <option>Kinesiología Deportiva</option>
+                <option>Kinesiología Gimnasio</option>
+                <option>Medicina del Deporte</option>
+                <option>Medicina Familiar</option>
+                <option>Medicina Familiar Infantil</option>
+                <option>Medicina física y Rehabilitaci</option>
+                <option>Medicina General</option>
+                <option>Medicina General Formación Cardiología</option>
+                <option>Medicina General Formación Cardiología Infantil</option>
+                <option>Medicina General Formación Dermatología</option>
+                <option>Medicina General Formación Endocrinología</option>
+                <option>
+                  Medicina General Formación Enfermedades Respirat
+                </option>
+                <option>Medicina General Formación Gastroenterología</option>
+                <option>Medicina General Formación Ginecología</option>
+                <option>Medicina General Formación Hematología</option>
+                <option>Medicina General Formación Neurología</option>
+                <option>Medicina General Formación Otorrinolaringología</option>
+                <option>Medicina General Formación Reumatología</option>
+                <option>Medicina General Formación Traumatología</option>
+                <option>Medicina General Formación Urología</option>
+                <option>Medicina Interna</option>
+                <option>Nefrología Adulto</option>
+                <option>Nefrología Infantil</option>
+                <option>Neonatología</option>
+                <option>Neurocirugía</option>
+                <option>Neurocirugía Infantil</option>
+                <option>Neurología Adulto</option>
+                <option>Neurología Pediátrica</option>
+                <option>Neuropsicología Adulto</option>
+                <option>Nutricionista</option>
+                <option>Nutricionista Deportiva</option>
+                <option>Obesidad y Nutrición Adulto</option>
+                <option>Obesidad y Nutrición Infantil</option>
+                <option>Oftalmologia Adulto</option>
+                <option>Oftalmologia Adulto e Infantil</option>
+                <option>Oftalmología Oculoplástica</option>
+                <option>Oncología</option>
+                <option>Otorrinolaringología</option>
+                <option>Patología Mamaria</option>
+                <option>Pediatria Formación Inmunología Infantil</option>
+                <option>Pediatría y Otras Consultas Infantiles</option>
+                <option>Prematuro y Seguimiento</option>
+                <option>Programa Cardiovascular</option>
+                <option>Psico-Oncología Adulto</option>
+                <option>Psicología Adolescencia</option>
+                <option>Psicología Adultos</option>
+                <option>Psicología Infantil</option>
+                <option>Psicología Infanto juvenil</option>
+                <option>Psicopedagogía</option>
+                <option>Psiquiatría Adultos</option>
+                <option>Psiquiatría Pediátrica y de la Adolescencia</option>
+                <option>Reumatología</option>
+                <option>Reumatología Infantil</option>
+                <option>Terapeuta de Parejas</option>
+                <option>Terapia Familiar Adulto</option>
+                <option>Terapia Familiar Infantil</option>
+                <option>Terapia Ocupacional</option>
+                <option>Trastornos del sueño</option>
+                <option>Traumatología Cadera</option>
+                <option>Traumatología Columna</option>
+                <option>Traumatología Deportiva Adulto</option>
+                <option>Traumatología Escoliosis</option>
+                <option>Traumatología Hombro</option>
+                <option>Traumatología Hombro y Codo</option>
+                <option>Traumatología Mano</option>
+                <option>Traumatología Muñeca y Mano</option>
+                <option>Traumatología Rodilla</option>
+                <option>Traumatología Tobillo y Pie</option>
+                <option>Traumatología Tumores</option>
+                <option>Traumatología y Ortopedia Adulto</option>
+                <option>Traumatología y Ortopedia Adulto e Infantil</option>
+                <option>Traumatología y Ortopedia Infantil</option>
+                <option>Urología Adulto</option>
+                <option>Urología Infantil</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fecha">Ingrese la fecha</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fecha"
+                placeholder="Ingrese la fecha"
+              />
+            </div>
+            <div class="form-group">
+              <label for="hora">Ingrese la hora</label>
+              <select id="hora" class="form-control">
+                <option selected>08:00</option>
+                <option selected>09:00</option>
+                <option selected>10:00</option>
+                <option selected>11:00</option>
+                <option selected>12:00</option>
+                <option selected>13:00</option>
+                <option selected>14:00</option>
+                <option selected>15:00</option>
+                <option selected>16:00</option>
+                <option selected>17:00</option>
+                <option selected>18:00</option>
+                <option selected>19:00</option>
+              </select>
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary">
+              Reservar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="exito" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Reserva exitosa</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Estimado(a) <span data-nombre></span>, su hora para
+              <span data-esp></span> ha sido reservada para el día
+              <span data-fecha></span> a las <span data-hora></span>. Además, se
+              le envió un mensaje a su correo <span data-email></span> con el
+              detalle de su cita.
+            </p>
+            <p>Gracias por preferirnos</p>
+          </div>
+          <div class="modal-footer">
+            <button id="ok" type="button" class="btn btn-primary">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var validacion = false;
+      document
+        .getElementById("submit")
+        .addEventListener("click", validarFormulario);
+      function validarFormulario(e) {
+        e.preventDefault();
+        var inputRut = document.getElementById("rut").value;
+        var inputNombres = document.getElementById("nombres").value;
+        var inputApellidos = document.getElementById("apellidos").value;
+        var inputEdad = document.getElementById("edad").value;
+        var inputEmail = document.getElementById("email").value;
+        var inputEsp = document.getElementById("especialidad").value;
+        var inputFecha = document.getElementById("fecha").value;
+        var inputHora = document.getElementById("hora").value;
+        var favor = ". Por favor, ingréselo nuevamente.";
+        // RUT
+        inputRut = inputRut.replace(/\./gi, "");
+        inputRut = inputRut.replace(/\-/gi, "");
+        inputRutC = inputRut.slice(0, -1);
+        inputRutV = inputRut.slice(-1).toUpperCase();
+        inputRutS = 0;
+        inputRutM = 2;
+        for (i = 1; i <= inputRutC.length; i++) {
+          index = inputRutM * inputRut.charAt(inputRutC.length - i);
+          inputRutS = inputRutS + index;
+          if (inputRutM < 7) {
+            inputRutM = inputRutM + 1;
+          } else {
+            inputRutM = 2;
+          }
+        }
+        inputRutVE = 11 - (inputRutS % 11);
+        inputRutV = inputRutV == "K" ? 10 : inputRutV;
+        inputRutV = inputRutV == 0 ? 11 : inputRutV;
+        // VAL RUT
+        if (inputRutC.length < 7) {
+          alert("Verifique la longitud del RUT ingresado" + favor);
+          document.getElementById("rut").focus();
+          return false;
+        }
+        if (inputRutVE != inputRutV) {
+          alert("El RUT que ha ingresado no es válido" + favor);
+          document.getElementById("rut").focus();
+          return false;
+        }
+        // NOMBRE
+        if (/^[a-z ]+$/i.test(inputNombres) == false) {
+          alert("El nombre no puede contener números" + favor);
+          document.getElementById("nombres").focus();
+          return false;
+        }
+        // APELLIDOS
+        if (/^[a-z ]+$/i.test(inputApellidos) == false) {
+          alert("Los apellidos no pueden contener números" + favor);
+          document.getElementById("apellidos").focus();
+          return false;
+        }
+        // EDAD
+        if (/^[0-9]+$/i.test(inputEdad) == false) {
+          alert("Ingrese sólo números en la edad" + favor);
+          document.getElementById("edad").focus();
+          return false;
+        }
+        // EMAIL
+        if (
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+            inputEmail
+          ) == false
+        ) {
+          alert("Ingrese un e-mail válido" + favor);
+          document.getElementById("email").focus();
+          return false;
+        }
+        // FECHA
+        if (
+          /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/.test(
+            inputFecha
+          ) == false
+        ) {
+          alert("Ingrese la fecha en formato dd-mm-aaaa" + favor);
+          document.getElementById("fecha").focus();
+          return false;
+        }
+        exitoReserva(
+          inputNombres,
+          inputApellidos,
+          inputEsp,
+          inputFecha,
+          inputHora,
+          inputEmail
+        );
+      }
+      function exitoReserva(nombre, apellidos, esp, fecha, hora, email) {
+        document.querySelector("[data-nombre]").innerText =
+          nombre + " " + apellidos;
+        document.querySelector("[data-esp]").innerText = esp;
+        document.querySelector("[data-fecha]").innerText = fecha;
+        document.querySelector("[data-hora]").innerText = hora;
+        document.querySelector("[data-email]").innerText = email;
+        $("#exito").modal();
+      }
+      document.getElementById("ok").addEventListener("click", function (e) {
+        e.preventDefault();
+        document.getElementsByTagName("form")[0].reset();
+        $("#exito").modal("toggle");
+      });
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
