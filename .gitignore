@@ -30,3 +30,4 @@ houstel-site
 apoyo/
 *.zip
 *.txt
+node_modules/
