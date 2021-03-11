@@ -22,10 +22,26 @@
         width: 100%;
         height: 100%;
       }
+      :focus {
+        outline: none;
+      }
+      ::placeholder {
+        color: #ccc;
+        opacity: 1;
+      }
+      :-ms-input-placeholder {
+        color: #ccc;
+      }
+      ::-ms-input-placeholder {
+        color: #ccc;
+      }
+      em {
+        font-style: italic;
+      }
       textarea {
         position: absolute;
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         border: 0;
         font-family: "Escolar1", serif;
         font-weight: normal;
@@ -35,6 +51,7 @@
         line-height: 87px;
         padding: 0 0.5em;
         resize: none;
+        background-attachment: local;
         background-image: linear-gradient(
           0deg,
           #dddddd 0.57%,
@@ -70,13 +87,13 @@
       #credits {
         position: fixed;
         font-family: Helvetica, Arial, sans-serif;
-        font-size: 12px;
+        font-size: 0.75em;
         color: #fff;
         bottom: 0;
         width: 100%;
-        padding: 0.5em;
+        padding: 0.65em;
         background-color: #999;
-        opacity: 0.3;
+        opacity: 0.2;
         transition: all 0.2s;
         text-align: center;
       }
@@ -89,10 +106,15 @@
       a:hover {
         color: #fff;
       }
+      @media screen and (max-width: 980px) {
+        #credits {
+          line-height: 1.5em;
+        }
+      }
     </style>
   </head>
   <body>
-    <textarea>Texto de prueba!</textarea>
+    <textarea placeholder="Escribe el texto aquí."></textarea>
     <div id="credits">
       <p>
         Créditos:
@@ -101,11 +123,15 @@
           target="_blank"
           >InnovEduca.com</a
         >
-        por su tipografía Escolar Normal. |
-        <a href="https://github.com/nufrankz/ligada" target="_blank">Github</a>
+        por su tipografía <em>Escolar Normal</em>. |
+        <a
+          href="https://github.com/nufrankz/nufrankz.github.io/tree/master/ligada"
+          target="_blank"
+          >Github</a
+        >
         |
         <a
-          href="https://github.com/nufrankz/ligada/blob/main/LICENSE.md"
+          href="https://github.com/nufrankz/nufrankz.github.io/blob/master/ligada/LICENSE.md"
           target="_blank"
           >Licencia MIT</a
         >
