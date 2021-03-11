@@ -10,7 +10,7 @@ Es un archivo HTML, se puede ver en el navegador, descargar y editar como tal.
 
 ## Uso
 
-[Entrar](https://nufrankz.github.io/ligada/) al sitio web, editar el texto de manera deseada. El texto se borra en cada recarga ço carga de la página.
+[Entrar](https://nufrankz.github.io/ligada/) al sitio web, editar el texto de manera deseada. El texto se borra en cada recarga o carga de la página.
 
 ## Licencia
 
